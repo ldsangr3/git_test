@@ -1,14 +1,258 @@
-<AddOrderThread.Request xmlns="urn:com:metasolv:oms:xmlapi:1">
-   <OrderID>1234</OrderID>
-   <Process>process_mnemonic</Process>
-   <ProcessPosition>process_position_mnemonic</ProcessPosition>
-   <Add path="/client_info">
-      <address>
-         <street1>55 James St.</street1>
-         <city>Washington</city>
-         <state>DC</state>
-         <country>USA</country>
-         <zip>20002</zip>
-      </address>
-   </Add>
-</AddOrderThread.Request>
+<env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+   <env:Header/>
+   <env:Body>
+      <GetOrderResponse xmlns="http://xmlns.oracle.com/communications/ordermanagement">
+         <OrderSummary>
+            <Id>49</Id>
+            <Specification>
+               <Cartridge>
+                  <Name>VTAL_OSM_Fibra_SOM</Name>
+                  <Version>1.0.0.3.5</Version>
+               </Cartridge>
+               <Type>OI_Fibra_Instalacao_Ordem</Type>
+               <Source>Vtal</Source>
+            </Specification>
+            <State>open.running.in_progress</State>
+            <Reference>02578359_10</Reference>
+            <CreatedDate>2024-06-19T17:31:06.000-05:00</CreatedDate>
+            <ExpectedDuration>P1D</ExpectedDuration>
+            <ExpectedOrderCompletionDate>2024-06-20T17:31:06.000-05:00</ExpectedOrderCompletionDate>
+            <ProcessStatus>n/a</ProcessStatus>
+            <Priority>5</Priority>
+         </OrderSummary>
+         <Data>
+            <osmc:_root index="0" xmlns:osmc="urn:oracle:names:ordermanagement:cartridge:VTAL_OSM_Fibra_SOM:1.0.0.3.5:view:usuario_master_query">
+               <osmc:pendencies_data index="1718836269655">
+                  <osmc:field_activity index="1718836269656">false</osmc:field_activity>
+                  <osmc:group_initialized index="1718836269657">true</osmc:group_initialized>
+               </osmc:pendencies_data>
+               <osmc:repair_pendency_data index="1718836269659">
+                  <osmc:repair_group_initialized index="1718836269660">true</osmc:repair_group_initialized>
+               </osmc:repair_pendency_data>
+               <osmc:order_data index="1">
+                  <osmc:com_order_service index="3">10697561</osmc:com_order_service>
+                  <osmc:crm_solicitation index="4">02578359_10</osmc:crm_solicitation>
+                  <osmc:solicitation_open_date index="5">23/05/2024 11:42:35</osmc:solicitation_open_date>
+                  <osmc:order_type index="6">Instalacao</osmc:order_type>
+                  <osmc:infra_type index="8">FTTH</osmc:infra_type>
+                  <osmc:wfm_activity_code index="7">4927</osmc:wfm_activity_code>
+                  <osmc:request_origin index="10">ClientCO OI</osmc:request_origin>
+                  <osmc:address_change index="12">false</osmc:address_change>
+                  <osmc:catalog_data index="13">
+                     <osmc:product_class index="14">WHITELABEL</osmc:product_class>
+                     <osmc:management_ont_hdm index="15">VTAL</osmc:management_ont_hdm>
+                     <osmc:aaa_nass index="16">TENANT</osmc:aaa_nass>
+                  </osmc:catalog_data>
+                  <osmc:client_data index="17">
+                     <osmc:client_name index="18">fabNLW+tY+u4inIs7WJCADR2qFhkeK/GPHcJ1tpuo4s=</osmc:client_name>
+                     <osmc:client_phone_number1 index="20">cwAjQ6XnfS2pUoLfkF8QXw==</osmc:client_phone_number1>
+                     <osmc:client_document index="23">17861191702</osmc:client_document>
+                     <osmc:client_contract_id index="25">800U6000009RJd1IAG</osmc:client_contract_id>
+                     <osmc:client_co index="27">Oi</osmc:client_co>
+                     <osmc:unique_contract_id index="28">800U6000009RJd1IAG#Oi</osmc:unique_contract_id>
+                  </osmc:client_data>
+                  <osmc:schedule_data index="32">
+                     <osmc:schedule_mandatory_type index="40">Obrigatorio</osmc:schedule_mandatory_type>
+                     <osmc:schedule_slot index="37">true</osmc:schedule_slot>
+                  </osmc:schedule_data>
+                  <osmc:address_list index="41">
+                     <osmc:address_data index="42">
+                        <osmc:address_street_type index="44">Rua</osmc:address_street_type>
+                        <osmc:address_street_name index="45">Argila</osmc:address_street_name>
+                        <osmc:address_port_number index="46">SN</osmc:address_port_number>
+                        <osmc:address_neighborhood index="47">Lar Fluminense</osmc:address_neighborhood>
+                        <osmc:address_complement_type1 index="48">QU</osmc:address_complement_type1>
+                        <osmc:address_complement_name1 index="49">62</osmc:address_complement_name1>
+                        <osmc:address_complement_type2 index="50">LT</osmc:address_complement_type2>
+                        <osmc:address_complement_name2 index="51">12</osmc:address_complement_name2>
+                        <osmc:address_city index="54">São João De Meriti</osmc:address_city>
+                        <osmc:address_state index="55">RJ</osmc:address_state>
+                        <osmc:address_zipcode index="56">25550480</osmc:address_zipcode>
+                        <osmc:address_location_code index="57">21258</osmc:address_location_code>
+                        <osmc:address_location_initials index="58">SMI</osmc:address_location_initials>
+                        <osmc:address_id index="59">2293477</osmc:address_id>
+                        <osmc:address_inventory_id index="60">1629238</osmc:address_inventory_id>
+                     </osmc:address_data>
+                  </osmc:address_list>
+                  <osmc:product_list index="62">
+                     <osmc:product_data index="63">
+                        <osmc:product_type index="64">Banda Larga</osmc:product_type>
+                        <osmc:product_name index="65">Oi Banda Larga 500Mbps</osmc:product_name>
+                        <osmc:product_tecnology index="66">FTTH</osmc:product_tecnology>
+                        <osmc:product_action index="67">adicionar</osmc:product_action>
+                        <osmc:product_catalog_id index="68">BL_500MB</osmc:product_catalog_id>
+                        <osmc:attribute_list index="69">
+                           <osmc:attribute_data index="70">
+                              <osmc:product_attribute_name index="71">Velocidade</osmc:product_attribute_name>
+                              <osmc:product_attribute_value index="72">500 MBPS</osmc:product_attribute_value>
+                              <osmc:product_attribute_action index="73">adicionar</osmc:product_attribute_action>
+                           </osmc:attribute_data>
+                           <osmc:attribute_data index="74">
+                              <osmc:product_attribute_name index="75">Download</osmc:product_attribute_name>
+                              <osmc:product_attribute_value index="76">500</osmc:product_attribute_value>
+                              <osmc:product_attribute_action index="77">adicionar</osmc:product_attribute_action>
+                           </osmc:attribute_data>
+                           <osmc:attribute_data index="78">
+                              <osmc:product_attribute_name index="79">Upload</osmc:product_attribute_name>
+                              <osmc:product_attribute_value index="80">250</osmc:product_attribute_value>
+                              <osmc:product_attribute_action index="81">adicionar</osmc:product_attribute_action>
+                           </osmc:attribute_data>
+                           <osmc:attribute_data index="82">
+                              <osmc:product_attribute_name index="83">ValorProduto</osmc:product_attribute_name>
+                              <osmc:product_attribute_value index="84">4966.00</osmc:product_attribute_value>
+                              <osmc:product_attribute_action index="85">adicionar</osmc:product_attribute_action>
+                           </osmc:attribute_data>
+                           <osmc:attribute_data index="86">
+                              <osmc:product_attribute_name index="87">ExibicaoFatura</osmc:product_attribute_name>
+                              <osmc:product_attribute_value index="88">1</osmc:product_attribute_value>
+                              <osmc:product_attribute_action index="89">adicionar</osmc:product_attribute_action>
+                           </osmc:attribute_data>
+                           <osmc:attribute_data index="90">
+                              <osmc:product_attribute_name index="91">DescricaoFatura</osmc:product_attribute_name>
+                              <osmc:product_attribute_value index="92">Oi Fibra 500 Mega</osmc:product_attribute_value>
+                              <osmc:product_attribute_action index="93">adicionar</osmc:product_attribute_action>
+                           </osmc:attribute_data>
+                           <osmc:attribute_data index="94">
+                              <osmc:product_attribute_name index="95">PrecoCap</osmc:product_attribute_name>
+                              <osmc:product_attribute_value index="96">129.90</osmc:product_attribute_value>
+                              <osmc:product_attribute_action index="97">adicionar</osmc:product_attribute_action>
+                           </osmc:attribute_data>
+                           <osmc:attribute_data index="98">
+                              <osmc:product_attribute_name index="99">Ativo</osmc:product_attribute_name>
+                              <osmc:product_attribute_value index="100">1</osmc:product_attribute_value>
+                              <osmc:product_attribute_action index="101">adicionar</osmc:product_attribute_action>
+                           </osmc:attribute_data>
+                           <osmc:attribute_data index="102">
+                              <osmc:product_attribute_name index="103">ModeloCobranca</osmc:product_attribute_name>
+                              <osmc:product_attribute_value index="104">Pré-Pago</osmc:product_attribute_value>
+                              <osmc:product_attribute_action index="105">adicionar</osmc:product_attribute_action>
+                           </osmc:attribute_data>
+                        </osmc:attribute_list>
+                     </osmc:product_data>
+                  </osmc:product_list>
+                  <osmc:repair_data index="106">
+                     <osmc:problem_desc index="110">
+                        <a xmlns=""/>
+                     </osmc:problem_desc>
+                     <osmc:description index="116">
+                        <a xmlns=""/>
+                     </osmc:description>
+                     <osmc:problem index="122">
+                        <a xmlns=""/>
+                     </osmc:problem>
+                  </osmc:repair_data>
+               </osmc:order_data>
+               <osmc:operations_data index="1718836269629">
+                  <osmc:add_internet index="1718836269630">true</osmc:add_internet>
+                  <osmc:config_jumper index="1718836269637">false</osmc:config_jumper>
+                  <osmc:change_cdo index="1718836269638">true</osmc:change_cdo>
+                  <osmc:flag_pendency index="1718836269639">false</osmc:flag_pendency>
+                  <osmc:association_origin_system index="1718836269643">NONE</osmc:association_origin_system>
+                  <osmc:ba_task_close index="1718836269644">true</osmc:ba_task_close>
+                  <osmc:ba_equipment_installed index="1718836269645">false</osmc:ba_equipment_installed>
+                  <osmc:pnr_reached index="1718836269646">false</osmc:pnr_reached>
+                  <osmc:obra_em_execucao index="1718836269648">false</osmc:obra_em_execucao>
+                  <osmc:troca_cdoe_em_execucao index="1718836269649">false</osmc:troca_cdoe_em_execucao>
+                  <osmc:necessita_desconfigurar index="1718836269652">true</osmc:necessita_desconfigurar>
+                  <osmc:troca_cpe_em_execucao index="1718836269653">false</osmc:troca_cpe_em_execucao>
+                  <osmc:allow_cancellation index="1718836269647">false</osmc:allow_cancellation>
+               </osmc:operations_data>
+               <osmc:history_data index="1718836269661">
+                  <osmc:process_data index="1718836269662">
+                     <osmc:order_id index="1718836269663">49</osmc:order_id>
+                     <osmc:process_name index="1718836269664">Instalação</osmc:process_name>
+                     <osmc:process_start index="1718836269665">19/06/2024 17:31:06</osmc:process_start>
+                     <osmc:process_status index="1718836269666">Em Tramitação</osmc:process_status>
+                     <osmc:activity_data index="1718836269667">
+                        <osmc:hist_id index="1718836269668">203</osmc:hist_id>
+                        <osmc:activity_name index="1718836269669">T001 - Solicitar Designacao de Recursos</osmc:activity_name>
+                        <osmc:activity_start index="1718836269670">19/06/2024 17:31:10</osmc:activity_start>
+                        <osmc:activity_status index="1718836269671">Em Tramitação</osmc:activity_status>
+                        <osmc:retryNumber index="1718836269676">0</osmc:retryNumber>
+                        <osmc:xml_request index="1718836269677">
+                           <xml xmlns="">
+                              <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+                                 <soapenv:Header/>
+                                 <soapenv:Body>
+                                    <FTTHInventoryInterface:request xmlns:FTTHCommon="FTTHCommon" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:FTTHInventoryInterface="FTTHInventoryInterface">
+                                       <FTTHInventoryInterface:actor>
+                                          <sistema>SOM</sistema>
+                                       </FTTHInventoryInterface:actor>
+                                       <FTTHInventoryInterface:correlationId>4920368786302208</FTTHInventoryInterface:correlationId>
+                                       <FTTHInventoryInterface:messageId>49203</FTTHInventoryInterface:messageId>
+                                       <FTTHInventoryInterface:sendDate>2024-06-19T17:31:12-03:00</FTTHInventoryInterface:sendDate>
+                                       <FTTHInventoryInterface:operation>DESIGNAR_FACILIDADE</FTTHInventoryInterface:operation>
+                                       <FTTHInventoryInterface:attributeList>
+                                          <FTTHInventoryInterface:attributeType>
+                                             <FTTHInventoryInterface:name>acessoGPON</FTTHInventoryInterface:name>
+                                             <FTTHInventoryInterface:value/>
+                                             <FTTHInventoryInterface:action>ACTIVAR</FTTHInventoryInterface:action>
+                                             <FTTHInventoryInterface:type>GPON</FTTHInventoryInterface:type>
+                                          </FTTHInventoryInterface:attributeType>
+                                          <FTTHInventoryInterface:attributeType>
+                                             <FTTHInventoryInterface:name>client_contract_id</FTTHInventoryInterface:name>
+                                             <FTTHInventoryInterface:value>800U6000009RJd1IAG</FTTHInventoryInterface:value>
+                                             <FTTHInventoryInterface:action>ACTIVAR</FTTHInventoryInterface:action>
+                                             <FTTHInventoryInterface:type>GPON</FTTHInventoryInterface:type>
+                                          </FTTHInventoryInterface:attributeType>
+                                          <FTTHInventoryInterface:attributeType>
+                                             <FTTHInventoryInterface:name>client_co</FTTHInventoryInterface:name>
+                                             <FTTHInventoryInterface:value>Oi</FTTHInventoryInterface:value>
+                                             <FTTHInventoryInterface:action>ACTIVAR</FTTHInventoryInterface:action>
+                                             <FTTHInventoryInterface:type>GPON</FTTHInventoryInterface:type>
+                                          </FTTHInventoryInterface:attributeType>
+                                          <FTTHInventoryInterface:attributeType>
+                                             <FTTHInventoryInterface:name>idEndereco</FTTHInventoryInterface:name>
+                                             <FTTHInventoryInterface:value>1629238</FTTHInventoryInterface:value>
+                                          </FTTHInventoryInterface:attributeType>
+                                          <FTTHInventoryInterface:attributeType>
+                                             <FTTHInventoryInterface:name>numeroOS</FTTHInventoryInterface:name>
+                                             <FTTHInventoryInterface:value>10697561</FTTHInventoryInterface:value>
+                                          </FTTHInventoryInterface:attributeType>
+                                          <FTTHInventoryInterface:attributeType>
+                                             <FTTHInventoryInterface:name>numeroPedido</FTTHInventoryInterface:name>
+                                             <FTTHInventoryInterface:value>02578359_10</FTTHInventoryInterface:value>
+                                          </FTTHInventoryInterface:attributeType>
+                                          <FTTHInventoryInterface:attributeType>
+                                             <FTTHInventoryInterface:name>product_type</FTTHInventoryInterface:name>
+                                             <FTTHInventoryInterface:value>Banda Larga</FTTHInventoryInterface:value>
+                                          </FTTHInventoryInterface:attributeType>
+                                          <FTTHInventoryInterface:attributeType>
+                                             <FTTHInventoryInterface:name>identificadorHSI</FTTHInventoryInterface:name>
+                                             <FTTHInventoryInterface:value/>
+                                             <FTTHInventoryInterface:action>ACTIVAR</FTTHInventoryInterface:action>
+                                             <FTTHInventoryInterface:type>HSI</FTTHInventoryInterface:type>
+                                          </FTTHInventoryInterface:attributeType>
+                                          <FTTHInventoryInterface:attributeType>
+                                             <FTTHInventoryInterface:name>planoHSI</FTTHInventoryInterface:name>
+                                             <FTTHInventoryInterface:value>Oi Banda Larga 500Mbps</FTTHInventoryInterface:value>
+                                             <FTTHInventoryInterface:action>ACTIVAR</FTTHInventoryInterface:action>
+                                             <FTTHInventoryInterface:type>HSI</FTTHInventoryInterface:type>
+                                          </FTTHInventoryInterface:attributeType>
+                                          <FTTHInventoryInterface:attributeType>
+                                             <FTTHInventoryInterface:name>velocidadeContratada</FTTHInventoryInterface:name>
+                                             <FTTHInventoryInterface:value>500 MBPS</FTTHInventoryInterface:value>
+                                             <FTTHInventoryInterface:action>ACTIVAR</FTTHInventoryInterface:action>
+                                             <FTTHInventoryInterface:type>HSI</FTTHInventoryInterface:type>
+                                          </FTTHInventoryInterface:attributeType>
+                                          <FTTHInventoryInterface:attributeType>
+                                             <FTTHInventoryInterface:name>infraType</FTTHInventoryInterface:name>
+                                             <FTTHInventoryInterface:value>FTTH</FTTHInventoryInterface:value>
+                                             <FTTHInventoryInterface:action>ACTIVAR</FTTHInventoryInterface:action>
+                                             <FTTHInventoryInterface:type>VOIP</FTTHInventoryInterface:type>
+                                          </FTTHInventoryInterface:attributeType>
+                                       </FTTHInventoryInterface:attributeList>
+                                    </FTTHInventoryInterface:request>
+                                 </soapenv:Body>
+                              </soapenv:Envelope>
+                           </xml>
+                        </osmc:xml_request>
+                        <osmc:pendency_info index="1718836269678"/>
+                     </osmc:activity_data>
+                  </osmc:process_data>
+               </osmc:history_data>
+            </osmc:_root>
+         </Data>
+      </GetOrderResponse>
+   </env:Body>
+</env:Envelope>

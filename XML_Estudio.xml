@@ -1,0 +1,14 @@
+<AddOrderThread.Request xmlns="urn:com:metasolv:oms:xmlapi:1">
+   <OrderID>1234</OrderID>
+   <Process>process_mnemonic</Process>
+   <ProcessPosition>process_position_mnemonic</ProcessPosition>
+   <Add path="/client_info">
+      <address>
+         <street1>55 James St.</street1>
+         <city>Washington</city>
+         <state>DC</state>
+         <country>USA</country>
+         <zip>20002</zip>
+      </address>
+   </Add>
+</AddOrderThread.Request>
